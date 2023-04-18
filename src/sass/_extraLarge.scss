@@ -1,0 +1,131 @@
+@media (min-width: 1200px) {
+  .header {
+    .nav {
+      &__menu-top {
+        font-size: 1.4rem;
+      }
+      &__menu-bottom {
+        .nav-link {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__btn {
+      font-size: 1.8rem;
+    }
+  }
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 1rem;
+    width: 100%;
+
+    .section-title {
+      font-size: 4.7rem;
+    }
+
+    &__description {
+      padding-bottom: 5rem;
+      padding-right: 1rem;
+      width: 30%;
+    }
+
+    &__text {
+      padding: 1rem 0 3rem;
+      font-size: 1.8rem;
+    }
+
+    &__btn {
+      font-size: 1.6rem;
+    }
+
+    &__cards {
+      width: 70%;
+    }
+
+    &__card {
+      width: 25%;
+    }
+  }
+  .packages {
+    padding: 0 1rem;
+
+    .section-title {
+      text-align: center;
+    }
+
+    &__cards {
+      gap: 4rem;
+    }
+
+    &__card {
+      width: 31%;
+
+      &--title {
+        font-size: 2.8rem;
+      }
+
+      &--text {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+      }
+
+      &--btn {
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .cooperation {
+    padding: 12rem 0;
+
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__btn-desktop {
+      font-size: 1.6rem;
+    }
+  }
+
+  .contact {
+    &__card {
+      .card-body {
+        .card-title {
+          font-size: 2.6rem;
+        }
+
+        .card-text {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__form {
+      .form-title {
+        text-align: left;
+        font-size: 3rem;
+      }
+
+      form {
+        label {
+          font-size: 1.8rem;
+        }
+        input {
+          margin-bottom: 1rem;
+          padding: 1rem;
+        }
+        button {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    &__map {
+      height: 674px;
+    }
+  }
+}
