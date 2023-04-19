@@ -25,7 +25,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url(../../dist/img/main-header-img-small.jpeg);
+  background-image: url(../../dist/img/main-header-img-large.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ body {
     height: 80px;
     background-color: colors.$darkColor;
     border-bottom: 2px solid colors.$mainColor;
-    z-index: 100;
+    z-index: 1000;
 
     &::after {
       position: absolute;
@@ -135,18 +135,20 @@ body {
   }
 
   &__text {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    max-width: 800px;
     padding: 0 1rem;
   }
 
   &__logotyp {
     width: 100%;
+
+    max-width: 800px;
   }
 
   &__btn {
@@ -186,7 +188,7 @@ body {
   &__social-icons {
     position: absolute;
     padding: 0 1rem;
-    bottom: 10%;
+    bottom: 5rem;
     right: 0;
 
     .fb-icon,
@@ -306,7 +308,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 4rem;
     margin: 2rem 0;
     width: 100%;
     height: 550px;
@@ -318,9 +320,10 @@ body {
       rgba(32, 30, 30, 0.8883928571428571) 100%
     );
     border: 4px solid colors.$mainColor;
-    border-radius: 40px;
+    border-radius: 20px;
 
     &--title {
+      text-align: center;
       font-size: 2.8rem;
       font-weight: bold;
       color: colors.$white;
@@ -332,14 +335,14 @@ body {
       text-align: center;
       i {
         margin: 0 0.5rem;
-        font-size: 6rem;
+        font-size: 3rem;
         color: colors.$mainColor;
       }
     }
 
     ul {
       text-align: center;
-      list-style: inside;
+      list-style: outside;
     }
 
     &--text {
@@ -451,14 +454,13 @@ body {
 }
 
 .cooperation {
-  padding: 8rem 0;
   position: relative;
+  padding: 8rem 0;
   background-image: url(../../dist/img/cooperation-img-small.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 0;
+  z-index: -1;
 
   .wrapper {
     display: flex;
@@ -491,8 +493,7 @@ body {
   }
 
   &__btn-mobile {
-    display: block;
-    width: max-content;
+    display: inline-block;
     padding: 1rem 3rem;
     font-size: 1.4rem;
     font-weight: 600;
@@ -509,7 +510,7 @@ body {
 }
 
 .contact {
-  padding: 8rem 1rem;
+  padding: 8rem 1rem 0;
 
   .section-title {
     text-align: center;
@@ -628,6 +629,7 @@ body {
       input {
         margin-bottom: 1rem;
         padding: 1rem;
+        color: colors.$white;
         background-color: transparent;
         border: 2px solid colors.$mainColor;
 
@@ -642,6 +644,7 @@ body {
         max-width: 100%;
         min-height: 200px;
         max-height: 500px;
+        color: colors.$white;
         background-color: transparent;
         border: 2px solid colors.$mainColor;
 
@@ -766,6 +769,25 @@ body {
   }
   &__text:nth-of-type(1) {
     padding-bottom: 1rem;
+  }
+}
+
+// services.html
+
+.header-services {
+  height: 65vh;
+  background-image: url(../../dist/img/services-header-img-small.jpg);
+
+  .section-title {
+    font-size: 6rem;
+    padding-bottom: 5rem;
+    line-height: 100%;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

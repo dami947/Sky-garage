@@ -21,7 +21,6 @@
 
     &__card {
       margin: 0;
-      padding: 4rem 2rem;
       width: 47%;
       height: 600px;
 
@@ -31,12 +30,10 @@
 
       &--text {
         padding: 1rem 0;
-
         font-size: 1.6rem;
       }
 
       &--btn {
-        padding: 1rem 3rem;
         font-size: 1.8rem;
       }
     }
@@ -46,16 +43,10 @@
     &__gallery {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 8rem 0;
     }
 
     .realization {
       width: 50%;
-      height: 300px;
-
-      &__text {
-        font-size: 3rem;
-      }
     }
 
     .realization:nth-last-of-type(1) {
@@ -70,7 +61,6 @@
     .wrapper {
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 1rem;
     }
 
     &__box-top {
@@ -114,6 +104,20 @@
 
     &__btn-mobile {
       display: none;
+    }
+  }
+
+  // services.html
+
+  .header-services {
+    .section-title {
+      font-size: 8rem;
+    }
+
+    &__text {
+      display: flex;
+      justify-content: flex-end;
+      align-items: start;
     }
   }
 }

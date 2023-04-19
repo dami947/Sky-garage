@@ -1,10 +1,9 @@
 @media (min-width: 992px) {
   .header {
-    background-image: url(../../dist/img/main-header-img-large.jpeg);
-
     .nav {
-      position: relative;
+      position: fixed;
       height: 100px;
+      z-index: 1000;
 
       &::after {
         height: 40%;
@@ -23,7 +22,7 @@
         height: 100px;
         width: 50%;
         background-color: transparent;
-        z-index: 10;
+        z-index: 100;
 
         &::before {
           position: absolute;
@@ -122,7 +121,6 @@
   .services {
     display: flex;
     justify-content: space-between;
-    padding: 8rem 1rem;
     width: 100%;
 
     .section-title {
@@ -130,7 +128,6 @@
     }
 
     &__description {
-      padding-bottom: 5rem;
       padding-right: 1rem;
       width: 30%;
     }
@@ -151,7 +148,6 @@
     &__card {
       width: 33%;
       height: 160px;
-      padding: 2rem 0;
 
       font-size: 1.5rem;
 
@@ -167,16 +163,10 @@
     &__gallery {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 8rem 0;
     }
 
     .realization {
       width: 33.3%;
-      height: 300px;
-
-      &__text {
-        font-size: 3rem;
-      }
     }
 
     .realization:nth-last-of-type(1) {
@@ -244,21 +234,10 @@
 
       .form-title {
         text-align: left;
-        font-size: 2.6rem;
       }
 
       form {
-        label {
-          font-size: 1.6rem;
-        }
-        input {
-          padding: 1rem;
-        }
         textarea {
-          margin-bottom: 1rem;
-          padding: 0.5rem 1rem;
-          min-width: 100%;
-          max-width: 100%;
           min-height: 350px;
           max-height: 550px;
         }
@@ -281,93 +260,35 @@
   }
 
   .footer-contact {
-    padding: 8rem 0;
-    background-color: colors.$footerColor;
     .wrapper {
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
 
-      img {
-        width: 100px;
-        height: 100px;
-      }
       .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding-top: 0;
-
-        &__title {
-          padding-bottom: 1rem;
-          font-size: 2.2rem;
-          font-weight: 600;
-          text-transform: uppercase;
-        }
-
-        &__text {
-          font-size: 1.4rem;
-          color: colors.$gray;
-
-          a {
-            padding-left: 0.5rem;
-            font-weight: 600;
-            color: colors.$mainColor;
-            text-decoration: none;
-            transition: color 0.2s;
-
-            &:hover {
-              color: colors.$white;
-            }
-          }
-        }
-
-        &__socials {
-          svg {
-            margin: 0 1rem;
-            width: 40px;
-            height: 40px;
-            fill: colors.$white;
-            transition: fill 0.2s;
-
-            &:hover {
-              fill: colors.$mainColor;
-            }
-          }
-        }
       }
     }
   }
 
   .footer {
-    padding: 2rem 0;
-    background-color: colors.$footerColor;
-    border-top: 2px solid #333;
-
     .wrapper {
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding: 0 1rem;
     }
 
-    &__text {
-      font-size: 1.4rem;
-      a {
-        color: colors.$mainColor;
-        text-decoration: none;
-        transition: color 0.2s;
-
-        &:hover {
-          color: colors.$white;
-        }
-      }
-    }
     &__text:nth-of-type(1) {
       padding-bottom: 0;
+    }
+  }
+
+  // services.html
+
+  .header-services {
+    .section-title {
+      font-size: 10rem;
     }
   }
 }
