@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+
   .header {
     .nav {
       position: fixed;
@@ -10,8 +14,9 @@
       }
 
       &__logo {
-        width: 100px;
-        height: 100px;
+        img {
+          width: 145px;
+        }
       }
 
       &__menu-desktop {

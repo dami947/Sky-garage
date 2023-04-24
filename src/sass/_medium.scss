@@ -1,4 +1,14 @@
 @media (min-width: 768px) {
+  .header {
+    .nav {
+      &__logo {
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+
   .services {
     &__card {
       width: 33%;
@@ -153,6 +163,40 @@
 
     &__text {
       font-size: 1.4em;
+    }
+  }
+
+  // tariff.html
+
+  .tariff {
+    .table {
+      .column-left {
+        width: 75%;
+      }
+
+      .column-right {
+        width: 25%;
+      }
+
+      &__services-title,
+      &__price-title {
+        font-size: 2rem;
+      }
+
+      &__services-text {
+        font-size: 1.6rem;
+
+        p {
+          font-size: 1.7rem;
+        }
+      }
+      &__price-text {
+        font-size: 1.6rem;
+      }
+    }
+
+    .attention-to-price {
+      font-size: 1.4rem;
     }
   }
 }

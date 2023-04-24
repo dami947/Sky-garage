@@ -11,6 +11,7 @@
 }
 
 html {
+  scroll-padding-top: 80px;
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
@@ -61,14 +62,14 @@ body {
     }
 
     &__logo {
-      padding: 1rem;
-      width: 80px;
-      height: 80px;
+      padding-left: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: 100px;
       }
     }
 
@@ -147,7 +148,6 @@ body {
 
   &__logotyp {
     width: 100%;
-
     max-width: 800px;
   }
 
@@ -691,8 +691,7 @@ body {
     align-items: center;
     padding: 0 1rem;
     img {
-      width: 100px;
-      height: 100px;
+      width: 145px;
     }
     .box {
       display: flex;
@@ -907,6 +906,73 @@ body {
 
   &__text {
     font-size: 1.4em;
+  }
+}
+
+// tariff.html
+
+.tariff {
+  padding: 8rem 1rem;
+
+  .table {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+
+    .column-left {
+      text-align-last: left;
+      width: 65%;
+    }
+
+    .column-right {
+      text-align: right;
+      width: 35%;
+    }
+
+    &__services-title,
+    &__price-title {
+      padding: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    &__services-text {
+      padding: 1rem;
+      font-size: 1.5rem;
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      ul {
+        list-style: inside;
+
+        li {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+    &__price-text {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: rgba(0, 186, 255, 0.05);
+      border: 1px solid colors.$mainColor;
+    }
+    th {
+      background-color: rgba(0, 186, 255, 0.2);
+      border: 1px solid colors.$mainColor;
+    }
+  }
+
+  .attention-to-price {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: colors.$lightGray;
   }
 }
 
