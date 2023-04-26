@@ -456,6 +456,7 @@ body {
 .cooperation {
   position: relative;
   padding: 8rem 0;
+  margin-bottom: 8rem;
   background-image: url(../../dist/img/cooperation-img-small.jpg);
   background-position: center;
   background-size: cover;
@@ -510,7 +511,7 @@ body {
 }
 
 .contact {
-  padding: 8rem 1rem 0;
+  padding: 0 1rem;
 
   .section-title {
     text-align: center;
@@ -1014,7 +1015,6 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1023,6 +1023,13 @@ body {
     backdrop-filter: blur(10px);
     animation: fadeIn 0.3s;
     z-index: 200;
+    cursor: pointer;
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .popup.hidden {
@@ -1046,12 +1053,12 @@ body {
 
   .popup-close {
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 6rem;
     color: colors.$mainColor;
     background-color: transparent;
     border: none;
@@ -1059,9 +1066,6 @@ body {
   }
 
   .popup-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;

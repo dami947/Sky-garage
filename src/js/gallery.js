@@ -1,6 +1,6 @@
 const THUMBNAILS = document.querySelectorAll('.gallery-img');
 const POPUP = document.querySelector('.popup');
-const POPUP_CLOSE = document.querySelector('.popup-close');
+// const POPUP_CLOSE = document.querySelector('.popup-close');
 const POPUP_IMG = document.querySelector('.popup-img');
 const ARROW_LEFT = document.querySelector('.popup-arrow--left');
 const ARROW_RIGHT = document.querySelector('.popup-arrow--right');
@@ -16,7 +16,6 @@ const showNextImg = () => {
   POPUP_IMG.src = THUMBNAILS[currentImgIndex].src;
   showNumberImg();
 };
-
 const showPreviousImg = () => {
   if (currentImgIndex === 0) {
     currentImgIndex = THUMBNAILS.length - 1;
@@ -63,7 +62,7 @@ THUMBNAILS.forEach((thumbnail, index) => {
   });
 });
 
-POPUP_CLOSE.addEventListener('click', closePopup);
+// POPUP_CLOSE.addEventListener('click', closePopup);
 
 ARROW_RIGHT.addEventListener('click', showNextImg);
 
@@ -86,7 +85,7 @@ document.addEventListener('keydown', e => {
 });
 
 POPUP.addEventListener('click', e => {
-  if (e.target === POPUP) {
+  if (e.target === POPUP || e.target === POPUP_IMG) {
     closePopup();
   }
 });
