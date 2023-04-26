@@ -1,20 +1,20 @@
 @media (min-width: 1200px) {
-  .header {
-    .nav {
-      &__menu-top {
-        font-size: 1.4rem;
+  .nav {
+    &__menu-top {
+      font-size: 1.4rem;
 
-        .menu-top-number {
-          font-size: 2rem;
-        }
-      }
-      &__menu-bottom {
-        .nav-link {
-          font-size: 1.8rem;
-        }
+      .menu-top-number {
+        font-size: 2rem;
       }
     }
+    &__menu-bottom {
+      .nav-link {
+        font-size: 1.8rem;
+      }
+    }
+  }
 
+  .header {
     &__btn {
       font-size: 1.8rem;
     }
@@ -183,6 +183,45 @@
 
     &__text {
       font-size: 1.6em;
+    }
+  }
+
+  // gallery
+
+  .gallery {
+    .box-gallery {
+      .gallery-img {
+        width: 33.3%;
+        height: 400px;
+      }
+    }
+
+    .number-img {
+      font-size: 2.4rem;
+    }
+
+    .popup-img {
+      max-width: 100%;
+      max-height: 80%;
+    }
+
+    .popup-close {
+      top: 2rem;
+      right: 2rem;
+
+      font-size: 6rem;
+    }
+
+    .popup-arrow {
+      font-size: 6rem;
+    }
+
+    .popup-arrow--left {
+      left: 2rem;
+    }
+
+    .popup-arrow--right {
+      right: 2rem;
     }
   }
 }
