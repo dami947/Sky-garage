@@ -42,7 +42,7 @@
       }
 
       &--btn {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -105,8 +105,9 @@
       text-decoration: none;
       transition: background-color 0.3s;
 
-      &:hover {
-        background-color: colors.$mainColorHover;
+      &:hover,
+      &:focus {
+        background-color: colors.$mainColor;
       }
     }
 

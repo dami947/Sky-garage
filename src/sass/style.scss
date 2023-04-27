@@ -165,7 +165,7 @@ body {
 
     &:hover,
     &:focus {
-      background-color: colors.$mainColorHover;
+      background-color: colors.$mainColor;
     }
   }
 
@@ -248,7 +248,7 @@ body {
 
     &:hover,
     &:focus {
-      background-color: colors.$mainColorHover;
+      background-color: colors.$mainColor;
     }
   }
 
@@ -352,17 +352,32 @@ body {
       color: #ccc;
     }
 
-    &--btn {
-      padding: 1rem 3rem;
-      font-size: 1.8rem;
+    &--priceBtn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--price {
+      font-size: 3rem;
       font-weight: bold;
       color: colors.$white;
-      background-color: colors.$mainColor;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: color 0.3s, background-color 0.3s;
+    }
 
-      &:hover {
+    &--btn {
+      margin-top: 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: colors.$white;
+      background-color: colors.$mainColor;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+
+      &:hover,
+      &:focus {
         color: colors.$darkColor;
         background-color: colors.$white;
       }
@@ -504,8 +519,9 @@ body {
     text-decoration: none;
     transition: background-color 0.3s;
 
-    &:hover {
-      background-color: colors.$mainColorHover;
+    &:hover,
+    &:focus {
+      background-color: colors.$mainColor;
     }
   }
 }
@@ -561,7 +577,8 @@ body {
         cursor: pointer;
         transition: color 0.3s;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: colors.$darkColor;
         }
       }
@@ -585,7 +602,8 @@ body {
         svg {
           transition: fill 0.3s;
         }
-        &:hover {
+        &:hover,
+        &:focus {
           svg {
             fill: colors.$darkColor;
           }
@@ -666,7 +684,8 @@ body {
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: colors.$darkColor;
           background-color: #fff;
         }
@@ -719,7 +738,8 @@ body {
           text-decoration: none;
           transition: color 0.2s;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: colors.$white;
           }
         }
@@ -733,7 +753,8 @@ body {
           fill: colors.$white;
           transition: fill 0.2s;
 
-          &:hover {
+          &:hover,
+          &:focus {
             fill: colors.$mainColor;
           }
         }
@@ -762,7 +783,8 @@ body {
       text-decoration: none;
       transition: color 0.2s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: colors.$white;
       }
     }
@@ -802,7 +824,8 @@ body {
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.1);
   }
 }
@@ -1003,7 +1026,8 @@ body {
       transform: scale(1);
       transition: transform 0.2s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         transform: scale(0.98);
       }
     }
@@ -1049,20 +1073,6 @@ body {
   .popup-img {
     max-width: 100%;
     max-height: 80%;
-  }
-
-  .popup-close {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
-    color: colors.$mainColor;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
 
   .popup-arrow {
