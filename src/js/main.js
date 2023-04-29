@@ -7,6 +7,7 @@ const cookieBtn = document.querySelector('.cookie-box__btn');
 const handleMenu = () => {
   mobileMenu.classList.toggle('menu-active');
   btnMenu.classList.toggle('is-active');
+  console.log('click');
 
   mobileMenu.addEventListener('click', () => {
     if (mobileMenu.classList.contains('menu-active')) {

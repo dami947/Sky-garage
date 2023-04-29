@@ -311,7 +311,7 @@ body {
     padding: 4rem;
     margin: 2rem 0;
     width: 100%;
-    height: 550px;
+    height: 600px;
     background: rgb(32, 31, 30);
     background: linear-gradient(
       0deg,
@@ -359,15 +359,37 @@ body {
       align-items: center;
     }
 
-    &--price {
-      font-size: 3rem;
-      font-weight: bold;
-      color: colors.$white;
+    &--btn-price {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 39px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: colors.$darkColor;
+      background-color: colors.$white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+
+      &:hover,
+      &:focus {
+        color: colors.$white;
+        background-color: colors.$mainColor;
+      }
     }
 
     &--btn {
       margin-top: 0.5rem;
-      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 39px;
+      text-align: center;
       font-size: 1.4rem;
       font-weight: 600;
       color: colors.$white;
@@ -953,10 +975,15 @@ body {
       width: 35%;
     }
 
+    .table-space {
+      border: none;
+      background-color: transparent;
+    }
+
     &__services-title,
     &__price-title {
       padding: 0.5rem;
-      font-size: 1.8rem;
+      font-size: 1.9rem;
       font-weight: bold;
     }
 
@@ -965,18 +992,22 @@ body {
       font-size: 1.5rem;
 
       p {
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
       }
 
       ul {
-        list-style: inside;
-
         li {
           padding: 0.5rem 0;
         }
       }
     }
+
+    &__services-text.packages {
+      padding-left: 3rem;
+    }
+
     &__price-text {
       padding: 1rem;
       font-size: 1.5rem;
@@ -1123,6 +1154,34 @@ body {
     to {
       opacity: 0;
     }
+  }
+}
+
+// cookie.html
+
+.cookie-info {
+  padding: 8rem 1rem;
+
+  &__title {
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: colors.$mainColor;
+  }
+
+  &__text {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    padding-bottom: 3rem;
+    list-style: inside;
+  }
+  li {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    color: colors.$lightGray;
   }
 }
 

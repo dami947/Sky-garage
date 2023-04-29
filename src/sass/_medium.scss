@@ -30,7 +30,6 @@
     &__card {
       margin: 0;
       width: 47%;
-      height: 600px;
 
       &--title {
         font-size: 2.8rem;
@@ -41,7 +40,16 @@
         font-size: 1.6rem;
       }
 
+      &--btn-price {
+        width: 220px;
+        height: 40px;
+
+        font-size: 1.5rem;
+      }
+
       &--btn {
+        width: 220px;
+        height: 40px;
         font-size: 1.5rem;
       }
     }
@@ -179,14 +187,14 @@
 
       &__services-title,
       &__price-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       &__services-text {
         font-size: 1.6rem;
 
         p {
-          font-size: 1.7rem;
+          font-size: 1.8rem;
         }
       }
       &__price-text {
@@ -237,6 +245,22 @@
 
     .popup-arrow--right {
       right: 2rem;
+    }
+  }
+
+  // cookie.html
+
+  .cookie-info {
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+    }
+
+    li {
+      font-size: 1.4rem;
     }
   }
 }
