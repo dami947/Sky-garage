@@ -21,6 +21,7 @@ A website created for a detailing studio located near Cracow. The site consists 
 * **JavaScript**
 * **Gulp**
 * **GIMP**
+* **FIGMA**
 
 
 
