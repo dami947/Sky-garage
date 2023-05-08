@@ -106,6 +106,10 @@ body {
       text-transform: uppercase;
       text-decoration: none;
     }
+
+    .nav-link-active {
+      color: colors.$darkColor;
+    }
   }
 
   .menu-active {
@@ -254,7 +258,7 @@ body {
 
   &__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
