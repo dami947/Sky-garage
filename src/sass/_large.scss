@@ -174,10 +174,6 @@
     .realization {
       width: 33.3%;
     }
-
-    .realization:nth-last-of-type(1) {
-      width: 33.3%;
-    }
   }
 
   .cooperation {
@@ -292,7 +288,8 @@
 
   // services.html
 
-  .header-services {
+  .header-services,
+  .header-tariff {
     .section-title {
       font-size: 9rem;
     }

@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/css/hamburgers.min.css" />
     <link rel="stylesheet" href="./dist/css/style.min.css" />
   </head>
@@ -78,7 +79,7 @@
     </header>
 
     <section class="tariff wrapper">
-      <table class="table">
+      <table class="table" data-aos="fade-right" data-aos-delay="100">
         <thead>
           <tr class="column-row-bg">
             <th class="table__services-title column-left">Bieżąca pielęgnacja</th>
@@ -124,6 +125,8 @@
             <td class="table__price-text column-right table-space"></td>
           </tr>
         </tbody>
+      </table>
+      <table class="table" data-aos="fade-left" data-aos-delay="100">
         <thead>
           <tr>
             <th class="table__services-title column-left">Usługi dodatkowe</th>
@@ -150,6 +153,8 @@
             <td class="table__price-text column-right table-space"></td>
           </tr>
         </tbody>
+      </table>
+      <table class="table" data-aos="fade-right" data-aos-delay="100">
         <thead>
           <tr>
             <th class="table__services-title column-left">Korekta lakieru</th>
@@ -174,6 +179,8 @@
             <td class="table__price-text column-right table-space"></td>
           </tr>
         </tbody>
+      </table>
+      <table class="table" data-aos="fade-left" data-aos-delay="100">
         <thead>
           <tr>
             <th class="table__services-title column-left">Powłoki ochronne</th>
@@ -212,6 +219,8 @@
             <td class="table__price-text column-right table-space"></td>
           </tr>
         </tbody>
+      </table>
+      <table class="table" data-aos="fade-right" data-aos-delay="100">
         <thead>
           <tr>
             <th class="table__services-title column-left">Pakiety</th>
@@ -354,6 +363,8 @@
       </p>
       <button class="cookie-box__btn">Akceptuj</button>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./dist/js/aosSetting.min.js"></script>
     <script src="./dist/js/main.min.js"></script>
   </body>
 </html>

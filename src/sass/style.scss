@@ -424,73 +424,47 @@ body {
   }
 
   .realization {
+    position: relative;
     width: 100%;
     height: 300px;
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &:hover .realization__text {
+      opacity: 1;
+    }
+
+    img {
+      display: block;
       width: 100%;
       height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      text-decoration: none;
-
-      &:hover {
-        .realization__text {
-          opacity: 1;
-        }
-      }
+      object-fit: cover;
     }
 
     &__text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
+      width: 100%;
+      opacity: 0;
       font-size: 3rem;
       font-weight: bold;
       color: colors.$mainColor;
       background-color: rgba(0, 0, 0, 0.8);
       text-transform: uppercase;
-      opacity: 0;
       transition: opacity 0.3s;
 
       .car-name {
-        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
-  }
-
-  .realization-img-one {
-    background-image: url(../../dist/img/realization-one.jpg);
-  }
-  .realization-img-two {
-    background-image: url(../../dist/img/realization-two.jpg);
-  }
-  .realization-img-three {
-    background-image: url(../../dist/img/realization-three.jpg);
-  }
-  .realization-img-four {
-    background-image: url(../../dist/img/realization-four.jpg);
-  }
-  .realization-img-five {
-    background-image: url(../../dist/img/realization-five.jpg);
-  }
-  .realization-img-six {
-    background-image: url(../../dist/img/realization-six.jpg);
-  }
-  .realization-img-seven {
-    background-image: url(../../dist/img/realization-seven.jpg);
-  }
-  .realization-img-eight {
-    background-image: url(../../dist/img/realization-eight.jpg);
-  }
-  .realization-img-nine {
-    background-image: url(../../dist/img/realization-nine.jpg);
   }
 }
 
