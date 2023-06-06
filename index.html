@@ -434,13 +434,13 @@
           <h2 class="form-title">Skontatkuj się z nami !</h2>
           <form action="https://formsubmit.io/send/kolasa.damian@outlook.com" method="POST">
             <label for="name">Imię</label>
-            <input id="name" name="mail" type="name" placeholder="Wpisz swoje imię." />
+            <input id="name" name="mail" type="name" placeholder="Wpisz swoje imię." requried />
             <label for="tel">Twój numer</label>
-            <input id="tel" name="tel" type="tel" placeholder="Wpisz swój numer." />
-            <label for="mail">Twój e-mail</label>
-            <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres." />
+            <input id="tel" name="tel" type="tel" placeholder="Wpisz swój numer." requried />
+            <label for="mail" requried>Twój e-mail</label>
+            <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres." requried />
             <label for="msg">Twoja wiadomość</label>
-            <textarea name="msg" id="msg" placeholder="Wpisz wiadmość."></textarea>
+            <textarea name="msg" id="msg" placeholder="Wpisz wiadmość." requried></textarea>
             <button value="Wyślij" type="submit">Wyślij wiadomość</button>
             <input
               name="_redirect"
