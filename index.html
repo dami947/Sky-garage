@@ -391,7 +391,7 @@
           <div class="card-body">
             <p class="card-title">Telefon</p>
             <div class="card-icon-text">
-              <a href="#"><i class="ti ti-phone"></i></a>
+              <a href="tel:577077009"><i class="ti ti-phone"></i></a>
               <a class="card-text" href="tel:577077009">+48 577 077 009</a>
             </div>
           </div>
@@ -433,7 +433,7 @@
           <h2 class="form-title">Skontatkuj się z nami !</h2>
           <form action="https://formsubmit.io/send/kolasa.damian@outlook.com" method="POST">
             <label for="name">Imię</label>
-            <input id="name" name="mail" type="text" placeholder="Wpisz swoje imię." />
+            <input id="name" name="mail" type="name" placeholder="Wpisz swoje imię." />
             <label for="tel">Twój numer</label>
             <input id="tel" name="tel" type="tel" placeholder="Wpisz swój numer." />
             <label for="mail">Twój e-mail</label>
@@ -441,6 +441,7 @@
             <label for="msg">Twoja wiadomość</label>
             <textarea name="msg" id="msg" placeholder="Wpisz wiadmość."></textarea>
             <button value="Wyślij" type="submit">Wyślij wiadomość</button>
+            <input name="_redirect" type="hidden" id="name" value="https://your website url" />
           </form>
         </div>
         <div class="contact__map">
