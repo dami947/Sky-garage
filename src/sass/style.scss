@@ -326,6 +326,13 @@ body {
     border: 4px solid colors.$mainColor;
     border-radius: 20px;
 
+    &--titleStars {
+      p {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+    }
+
     &--title {
       text-align: center;
       font-size: 2.8rem;
