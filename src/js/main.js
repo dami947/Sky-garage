@@ -1,5 +1,6 @@
 const btnMenu = document.querySelector('.nav__menu-btn');
 const mobileMenu = document.querySelector('.nav__menu-mobile-links');
+
 const footerYear = document.querySelector('.footer__year');
 const cookieBox = document.querySelector('.cookie-box');
 const cookieBtn = document.querySelector('.cookie-box__btn');
