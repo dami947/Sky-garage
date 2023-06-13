@@ -59,15 +59,6 @@
         }
       }
 
-      .open {
-        display: flex;
-        flex-direction: column;
-
-        .menu-top-open:nth-of-type(2) {
-          text-align: right;
-        }
-      }
-
       .menu-top-number {
         color: colors.$mainColor;
         text-decoration: none;
