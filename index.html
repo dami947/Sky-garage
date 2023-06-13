@@ -306,39 +306,39 @@
       <h1 class="section-title" data-aos="zoom-in">Nasze realizacje</h1>
       <div class="projects__gallery">
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-one.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/bmw_430i.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">BMW 430i</p>
           </div>
         </div>
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-two.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/vw_scirocco.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">Volkswagen Scirocco</p>
           </div>
         </div>
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-three.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/bmw_x1.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">BMW X1</p>
           </div>
         </div>
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-four.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/bmw_x3_inside.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">BMW X3</p>
           </div>
         </div>
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-five.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/vw_scirocco_inside.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">Volkswagen Scirocco</p>
           </div>
         </div>
         <div class="realization">
-          <img class="realization__img" src="./dist/img/realization-six.jpg" alt="car photo" />
+          <img class="realization__img" src="./dist/img/bmw_x1_inside.jpeg" alt="car photo" />
           <div class="realization__text">
-            <p class="car-name">Maserati ghibli</p>
+            <p class="car-name">BMW X1</p>
           </div>
         </div>
       </div>
@@ -434,14 +434,15 @@
           <h2 class="form-title">Skontaktuj się z nami !</h2>
           <form action="https://formsubmit.io/send/kolasa.damian@outlook.com" method="POST">
             <label for="name">Imię</label>
-            <input id="name" name="mail" type="name" placeholder="Wpisz swoje imię." requried />
+            <input required id="name" name="mail" type="name" placeholder="Wpisz swoje imię." />
             <label for="tel">Twój numer</label>
-            <input id="tel" name="tel" type="tel" placeholder="Wpisz swój numer." requried />
+            <input required id="tel" name="tel" type="tel" placeholder="Wpisz swój numer." />
             <label for="mail" requried>Twój e-mail</label>
-            <input id="mail" name="mail" type="mail" placeholder="Wpisz swój adres." requried />
+            <input required id="mail" name="mail" type="mail" placeholder="Wpisz swój adres." />
             <label for="msg">Twoja wiadomość</label>
-            <textarea name="msg" id="msg" placeholder="Wpisz wiadmość." requried></textarea>
-            <button value="Wyślij" type="submit">Wyślij wiadomość</button>
+            <textarea required name="msg" id="msg" placeholder="Wpisz wiadmość."></textarea>
+            <button class="btn-form" value="Wyślij" type="submit">Wyślij wiadomość</button>
+            <input name="_formsubmit_id" type="text" style="display: none" />
             <input
               name="_redirect"
               type="hidden"
@@ -452,7 +453,7 @@
         </div>
         <div class="contact__map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.606138064348!2d19.801683876959345!3d50.09366061298874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471658fa54a21263%3A0xb7caa026ae68bb21!2sStanis%C5%82awa%20Kmity%2011%2C%2032-083%20Szczyglice!5e0!3m2!1spl!2spl!4v1685991329921!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.9015686282006!2d19.80361506966833!3d50.09365805858552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471659d36eae816b%3A0xffb708764ce7431d!2sSkyGarage%20Detailing!5e0!3m2!1spl!2spl!4v1686682001252!5m2!1spl!2spl"
             width="600"
             height="450"
             style="border: 0"
@@ -468,7 +469,7 @@
         <a href="#"><img src="./dist/img/logo-autodetaling-sky-garage-w2.svg" alt="" /></a>
         <div class="box">
           <p class="box__title">sky-garage</p>
-          <p class="box__text">ul. Stanisława Kmity 11 32-083 Szczyglice</p>
+          <p class="box__text">ul. Stanisława Kmity 11, 32-083 Szczyglice</p>
           <p class="box__text">pon-pt: 09:00 - 17:00</p>
         </div>
         <div class="box">
@@ -518,6 +519,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/js/aosSetting.min.js"></script>
+
     <script src="./dist/js/main.min.js"></script>
   </body>
 </html>
