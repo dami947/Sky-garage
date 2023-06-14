@@ -132,7 +132,7 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background-image: url(../../dist/img/main-header-img-small.jpeg);
+  background-image: url(../../dist/img/main-header-img-large.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,7 +482,6 @@ body {
   background-image: url(../../dist/img/cooperation-img-small.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
 
   .wrapper {
