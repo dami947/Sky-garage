@@ -181,4 +181,13 @@
       font-size: 1.6em;
     }
   }
+
+  .gallery {
+    .box-gallery {
+      .gallery-img {
+        width: 33.3%;
+        height: 350px;
+      }
+    }
+  }
 }
