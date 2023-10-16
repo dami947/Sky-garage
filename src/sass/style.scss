@@ -1080,8 +1080,6 @@ body {
   }
 }
 
-// thankyou.html
-
 .thankyou {
   display: flex;
   justify-content: center;
@@ -1114,151 +1112,148 @@ body {
   }
 }
 
-// gallery.html
-
-.gallery {
+.realizations {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em 0;
+}
+.box-gallery {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 
-  .box-gallery {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+  .gallery-img {
     width: 100%;
-    margin: 0 auto;
-
-    .gallery-img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border: 5px solid transparent;
-      cursor: pointer;
-      transform: scale(1);
-      transition: transform 0.2s;
-
-      &:hover {
-        transform: scale(0.98);
-      }
-    }
-  }
-
-  .popup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    animation: fadeIn 0.3s;
-    z-index: 100;
-  }
-
-  .popup__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .popup.hidden {
-    display: none;
-  }
-
-  .number-img {
-    font-size: 2rem;
-    color: #fff;
-  }
-
-  .popup.fade-out {
-    animation: fadeOut 0.3s both;
-  }
-
-  .popup-img {
-    max-height: 80%;
-    max-width: 100%;
-  }
-
-  .popup-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    font-size: 5rem;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid transparent;
     cursor: pointer;
-  }
+    transform: scale(1);
+    transition: transform 0.2s;
 
-  .popup-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 5rem;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-  }
-
-  .popup-close,
-  .popup-arrow {
-    transition: color 0.3s;
-  }
-
-  .popup-close {
-    i {
-      font-size: 4rem;
+    &:hover {
+      transform: scale(0.98);
     }
   }
+}
 
-  .popup-close:hover,
-  .popup-arrow:hover {
-    color: colors.$mainColor;
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.3s;
+  z-index: 100;
+}
+
+.popup__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.number-img {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.popup.fade-out {
+  animation: fadeOut 0.3s both;
+}
+
+.popup-img {
+  max-height: 80%;
+  max-width: 100%;
+}
+
+.popup-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.popup-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 5rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.popup-close,
+.popup-arrow {
+  transition: color 0.3s;
+}
+
+.popup-close {
+  i {
+    font-size: 4rem;
+  }
+}
+
+.popup-close:hover,
+.popup-arrow:hover {
+  color: colors.$mainColor;
+}
+
+.popup-arrow--left {
+  left: 0;
+}
+
+.popup-arrow--right {
+  right: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  .popup-arrow--left {
-    left: 0;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
 
-  .popup-arrow--right {
-    right: 0;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0;
-    }
+  to {
+    opacity: 0;
   }
 }
 
